@@ -7,11 +7,13 @@ lvim.format_on_save.enabled = true
 lvim.transparent_window = true
 
 -- Debugger setup
-lvim.plugins = {
-  "nvim-neotest/neotest",
-  "nvim-neotest/neotest-go",
-}
+--lvim.plugins = {
+--  "nvim-neotest/neotest",
+--  "nvim-neotest/neotest-go",
+--}
 
 lvim.builtin.dap.active = true
 -- local mason_path = vim.fn.glob(vim.fn.stdpath "data" .. "/mason/")
 -- require("dap-python").setup(mason_path .. "packages/debugpy/venv/bin/python")
+
+require("abc.go")
