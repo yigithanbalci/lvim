@@ -1,3 +1,20 @@
+-- Telescope
+lvim.builtin.telescope.defaults = {
+    layout_strategy = "horizontal",
+    initial_mode = "insert",
+    layout_config = {
+        horizontal = {
+            mirror = false,
+        },
+        preview_cutoff = 120,
+        prompt_position = "bottom",
+        vertical = {
+            mirror = false,
+        },
+        width = 0.75,
+    },
+}
+
 -- Harpoon
 require('harpoon').setup({
     global_settings = {
