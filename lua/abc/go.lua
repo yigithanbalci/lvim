@@ -1,17 +1,10 @@
+
 ------------------------
 -- Treesitter
 ------------------------
 lvim.builtin.treesitter.ensure_installed = {
   "go",
   "gomod",
-}
-
-------------------------
--- Plugins
-------------------------
-lvim.plugins = {
-  "olexsmir/gopher.nvim",
-  "leoluz/nvim-dap-go",
 }
 
 ------------------------
@@ -99,3 +92,4 @@ gopher.setup {
     iferr = "iferr",
   },
 }
+

@@ -8,9 +8,24 @@
 --  "nvim-neotest/neotest",
 --  "nvim-neotest/neotest-go",
 --}
+vim.g.mapleader = ' '
+local fn = vim.fn
+local execute = vim.api.nvim_command
 
 lvim.builtin.dap.active = true
 -- local mason_path = vim.fn.glob(vim.fn.stdpath "data" .. "/mason/")
 -- require("dap-python").setup(mason_path .. "packages/debugpy/venv/bin/python")
 require("basics")
+
+-- Language settings (DAP, LSP etc)
+require("abc.languages")
 require("abc.go")
+
+-- Install Plugins 
+require("ide.plugins")
+
+-- Configure Plugins
+require("ide.pluginconfigs")
+
+-- Keymappings
+require("keymappings")
