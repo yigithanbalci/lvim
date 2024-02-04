@@ -7,3 +7,6 @@ lvim.builtin.which_key.mappings['h'] = {
     p = { "<cmd>lua require'harpoon.ui'.nav_prev{}<CR>", "Prev File" },
     m = { "<cmd>:Telescope harpoon marks<CR>", "Search File" },
 }
+
+lvim.keys.visual_mode["J"] = ":m '>+1<CR>gv=gv"
+lvim.keys.visual_mode["K"] = ":m '<-2<CR>gv=gv"
