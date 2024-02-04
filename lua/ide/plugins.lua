@@ -4,5 +4,6 @@ lvim.plugins = {
     "olexsmir/gopher.nvim",
     "mfussenegger/nvim-dap",
     "leoluz/nvim-dap-go",
-    "nvim-neotest/neotest-go"
+    "nvim-neotest/neotest-go",
+    "nvim-treesitter/nvim-treesitter-context"
 }
